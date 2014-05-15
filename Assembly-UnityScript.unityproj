@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{1753851C-AE59-909A-15AB-E3FFE34BC5A0}</ProjectGuid>
+	<ProjectGuid>{9C7C0459-0D8D-F4EF-224D-34FCCBE03632}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,19 +46,26 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\AccelerateDown.js" />
      <Compile Include="Assets\scripts\AnimateTexture.js" />
      <Compile Include="Assets\scripts\AppleCollider.js" />
+     <Compile Include="Assets\scripts\BouncePlayer.js" />
+     <Compile Include="Assets\scripts\Checkpoint.js" />
+     <Compile Include="Assets\scripts\Enemy.js" />
+     <Compile Include="Assets\scripts\EnemyFlip.js" />
      <Compile Include="Assets\scripts\FallingApple.js" />
+     <Compile Include="Assets\scripts\MovingEnemy.js" />
      <Compile Include="Assets\scripts\PlayerAnimate.js" />
      <Compile Include="Assets\scripts\PlayerRespawn.js" />
      <Compile Include="Assets\scripts\SmoothFollow2.js" />
+     <Compile Include="Assets\scripts\Teleport.js" />
      <Compile Include="Assets\scripts\Textureflip.js" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{79391AC5-8752-B4CC-F33F-BB9EB1094377}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{81B4CB8E-DE72-817D-016D-0395A207D63B}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{C62E21C4-7CD8-5581-1E66-AC8E36219989}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{9E695E6A-4568-5C63-5635-7EA79E94E0A2}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -2,13 +2,11 @@
 
 var velocity : float;
 var falling : boolean;
+var Player : GameObject;
+var spawnPoint : Transform;
 
 function Start () {
 
-}
-
-function pls() {
-	falling = true;
 }
 
 function Update () {
@@ -16,4 +14,5 @@ function Update () {
 		velocity += 0.01;
 		transform.localPosition.y -= velocity;
 	}
+	
 }

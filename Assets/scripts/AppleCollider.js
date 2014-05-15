@@ -1,15 +1,14 @@
 ﻿#pragma strict
-
+var FA = gameObject.GetComponent(FallingApple);
 function Start () {
 	
 }
 
 function Update () {
-
+	
 }
-
-
-
-function OnTriggerEnter(trig: Collider){
-	gameObject.SendMessage("pls");
+function OnTriggerEnter(other : Collider){
+		if(other.tag == "Player"){
+			FA.falling = true;
+			}
 }
